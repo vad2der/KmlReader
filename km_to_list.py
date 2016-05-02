@@ -44,6 +44,7 @@ class Parser:
                     continue
                 # if line does not comply, do not record it
                 if finish_tag in line:
+                    #print("stop record")
                     record = False
                     output += "</data>"
                 # if line fits, record it
@@ -51,6 +52,7 @@ class Parser:
                     output += line.rstrip()
                 # see if line fits
                 if start_tag in line:
+                    #print("start record")
                     record = True
                     output += "<data>\n"
         #print (output)

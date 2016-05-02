@@ -67,7 +67,7 @@ function setMapView(points) {
 			for (var i = 0; i < markersArray.length; i++ ) {
 				markersArray[i].setMap(null);
 			}
-			markersArray.length = 0;
+		markersArray.length = 0;
 		}
 	}
 	else{		
@@ -101,16 +101,16 @@ function setMarkers(map, points) {
 	for (var i = 0; i < points.length; i++) {
 		var point = points[i];
 		var marker = new google.maps.Marker({
-			position: {lat: parseFloat(point.LookAt.latitude),
-			           lng: parseFloat(point.LookAt.longitude)},
+			position: {lng: parseFloat(point.Point.coordinates.split(",")[0]),
+			           lat: parseFloat(point.Point.coordinates.split(",")[1])},
 			map: map,
 			//icon: image,
 			//shape: shape,
 			label: String(i+1)
 			//zIndex: String(point.type)
 		});		
-		bounds.extend(new google.maps.LatLng(parseFloat(point.LookAt.latitude),
-											 parseFloat(point.LookAt.longitude)));
+		bounds.extend(new google.maps.LatLng(parseFloat(point.Point.coordinates.split(",")[1]),
+											parseFloat(point.Point.coordinates.split(",")[0])));
 	}		
 };
 

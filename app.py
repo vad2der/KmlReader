@@ -20,7 +20,7 @@ def parse_kml_from_file(filename):
     parser = Parser(filename)
     out_dict = parser.parse()
     #for k in out_dict:
-    #    print (json.dumps(k, indent=4))
+        #print (json.dumps(k, indent=4))
     #print (out_dict)
     return out_dict
 

@@ -4,7 +4,7 @@ var openKML = function() {
         type: 'GET',
 	    url: '/api/kml/sample.kml',	    
 	    success: function(points) {
-	    	//alert(parseFloat(points[0].LookAt.latitude));
+	    	//alert(points[0].Point.coordinates.split(',')[0]);
 			setMapView(eval(points));			
         },
         error: function() {
