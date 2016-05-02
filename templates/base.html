@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<title>Map view page</title>
+  <head>
+    <script src="http://maps.googleapis.com/maps/api/js?key={{GOOGLEMAPS_KEY}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"></link>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div class="header">
+      <p> </p>
+      <p>Mapping application</p>
+      <p> </p>
+    </div>
+
+    <!-- content -->
+    {% block content %}
+    {% endblock content %}
+
+    <!-- footer -->
+    <div class="footer">
+      <p>
+      Status = in development. Vadim Deryabin.
+      </p>
+    </div>
+
+  </body>
+    <script type="text/javascript" src="{{ url_for('static', filename='googlemap.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='readkml.js') }}"></script>
+</html>

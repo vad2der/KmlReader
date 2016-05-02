@@ -1,0 +1,76 @@
+
+*{
+    margin: 0em;
+    font-family: "Sans-serif", monospace, Serif;
+}
+html, body {
+height: 100%;
+}
+.header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    line-height: 100%;
+    padding-top: 0em;
+    padding:2px;
+    height:10%;
+    min-height: 10%;  
+    font-size: 2.5em;  
+}
+.section1 {
+    line-height:20px;
+    background-color:#eeeeee;    
+    width:15%;
+    float:left;
+    padding:5px;
+    min-height: 78.2%;
+    height: auto;
+    height: 78.2%;
+    margin: 0 auto 0em;
+}
+.section2 {
+    margin: auto;
+    position: relative;
+    line-height:30px;    
+    float:left;
+    padding:10px;
+    -webkit-align-items: center; /* Safari 7.0+ */
+    text-align:left;
+    align-items: center;
+}
+.section3 {
+    line-height:20px;
+    background-color:#eeeeee;
+    width:15%;
+    float:right;
+    padding:5px;
+    min-height: 78.2%;
+    height: auto;
+    height: 78.2%;
+    margin: 0 auto 0em; 
+}
+.footer {    
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:right;
+    vertical-align: middle;
+    padding:5px; 
+    height:10%;
+    min-height: 10%;
+    padding-bottom: 0em;
+    font-size: 0.875em;
+}
+.push {    
+    clear:both;    
+    height:4em;
+}
+.center {
+    position: absolute;
+    align-self: center;
+}
+.right {
+    align-self: right;
+}
